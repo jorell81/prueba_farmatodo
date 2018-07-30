@@ -39,13 +39,14 @@ i{
     color: grey;
 }
 
-.containerCards{
+.body .containerCards{
     background: whitesmoke;
     min-height: calc(100vh - 160px);
 }
 
 .containerFavorites{
     background: #e6e6e6;
+    min-height: calc(100vh - 160px);
 }
 
 .footspan{
@@ -55,4 +56,38 @@ i{
 footer{
     padding: 40px;
 
+}
+
+.card {
+    border-radius: inherit;
+    border: none;
+}
+
+.description-character {
+    font-size: 0.8em;
+    color: #796f6e;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 22px;
+    max-height: 150px;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    font-family: Poppins;
+}
+
+.img-character {
+    border-radius: 100%;
+    max-width: 110%;
+    margin-top: -20px;
+    margin-left: -30px;
+    -webkit-box-shadow: 3px 5px 16px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 5px 16px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 5px 16px -7px rgba(0, 0, 0, 0.75);
+    min-width: 190px;
+    min-height: 190px;
+    max-height: 230px;
+    max-width: 230px;
+    height: 230px;
+    width: 230px;
 }

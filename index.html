@@ -20,7 +20,7 @@
     <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular-route.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
 </head>
-<body>
+<body class="body">
     <nav class="navbar navbar-light fondonav">
         <div class="container-fluid">
             <div class="col-md-3 text-center text-md-left">
@@ -35,10 +35,64 @@
             <div class="col-md-3 text-white text-center pointer"></div>
         </div>
     </nav>
-    <div class="container-fluid ">
+    <div class="container-fluid containerCards">
         <div class="row">
-            <div class="col-md-9 containerCards">
-
+            <div class="col-md-9">
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4 text-center text-md-left">
+                            <img src="images/characters.png" alt=""><span class="text-sort">Characters</span>
+                        </div>
+                        <div class="col-md-3">
+                        </div>
+                        <div class="col-6 col-md-3 text-right">
+                            <select ng-model="appCtrl.selectSort" ng-change="appCtrl.changeSelectOrder()" class="ng-pristine ng-untouched ng-valid ng-empty">
+                                <option value="" selected="selected">Sort by</option>
+                                <option value="name">Name</option>
+                                <option value="modified">Modified</option>
+                            </select>
+                        </div>
+                        <div class="col-6 col-md-2 text-right">
+                            <select ng-model="appCtrl.selectView" ng-change="appCtrl.orderView()" class="ng-pristine ng-untouched ng-valid ng-not-empty">
+                                <option value="">View</option>
+                                <option value="10" selected="selected">10</option>
+                                <option value="20">20</option>
+                                <option value="50">50</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row justify-content-md-center">
+                    <div class="col-md-6">
+                        <div class="container">
+                            <br>
+                            <div class="card">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6 col-md-6 col-sm-6">
+                                            <img class="img-character" src="http://i.annihil.us/u/prod/marvel/i/mg/d/d0/5269657a74350.jpg" width="100%">
+                                        </div>
+                                        <div class="col-6 col-md-6">
+                                            <h6>William</h6>
+                                            <p class="description-character">As the Norse God of thunder and lightning,
+                                                Thor wields one of the greatest weapons
+                                                ever made, the enchanted hammer Mjolnir.
+                                                While others have described Thor as an
+                                                over-muscled, oafish imbecile, he's quite
+                                                smart and compassionate.  He's self-assured,
+                                                and he would never, ever stop fighting for
+                                                a worthwhile cause.
+                                            </p>
+                                            <button class="btn-character" ng-click="">VIEW MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-3 containerFavorites">
 
