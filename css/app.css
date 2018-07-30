@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fondonav{
+    background: #2d2727;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 50%;
+}
+
+input[type="text"]{
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+    padding-left: 25px;
+    font-family: Poppins;
+}
+
+.btn-search{
+    position: absolute;
+    right: 23px;
+    height: 100%;
+    top: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+i{
+    vertical-align: middle;
+    font-size: 30px !important;
+    color: grey;
+}
+
+.containerCards{
+    background: whitesmoke;
+    min-height: calc(100vh - 160px);
+}
+
+.containerFavorites{
+    background: #e6e6e6;
+}
+
+.footspan{
+    color: white;
+}
+
+footer{
+    padding: 40px;
+
+}
